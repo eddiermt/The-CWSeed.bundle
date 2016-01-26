@@ -110,7 +110,7 @@ def SeedJSON(url, title, season, show_title):
         ))
         
     # For some reason the json is being sorted out of order so we have to sort it here
-    oc.objects.sort(key = lambda obj: obj.index, reverse=True)
+    oc.objects.sort(key = lambda obj: obj.index, reverse=False)
         
     if len(oc) < 1:
         Log ('still no value for objects')
